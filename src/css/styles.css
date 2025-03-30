@@ -114,6 +114,7 @@ body {
 
 .decoration-text {
   position: absolute;
+  bottom: 0;
 
   display: flex;
   justify-content: space-between;
@@ -126,14 +127,12 @@ body {
 
 .decoration-text.left {
   left: 10px;
-  bottom: 0;
 
   transform: rotate(180deg);
 }
 
 .decoration-text.right {
   right: 10px;
-  bottom: 0;
 }
 
 .decor-text {
@@ -231,6 +230,7 @@ body {
     max-width: 1280px;
 
     padding-top: 150px;
+    padding-bottom: 100px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -243,6 +243,7 @@ body {
 
   .decoration-text {
     height: 464px;
+    bottom: 100px;
   }
 
   .decor-text {
@@ -288,6 +289,14 @@ body {
     letter-spacing: -0.36px;
     max-width: 200px;
     margin: 0;
+
+    transition: color 300ms linear, background-color 300ms linear;
+  }
+
+  .hero .more-btn:hover,
+  .hero .more-btn:focus {
+    color: #090909;
+    background-color: #ffeb5f;
   }
 }
 
@@ -364,7 +373,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   .for-whom .main-info-container {
-    padding-top: 120px;
+    padding-top: 60px;
     padding-bottom: 40px;
 
     background-image: url(../img/for-whom/image-1x-desktop.jpg);
@@ -601,6 +610,14 @@ body {
     max-width: 200px;
     width: 100%;
     margin: -90px 0 0 auto;
+
+    transition: color 300ms linear, background-color 300ms linear;
+  }
+
+  .buy-btn:hover,
+  .buy-btn:focus {
+    color: #ffeb5f;
+    background-color: #ffec5f00;
   }
 }
 
@@ -608,7 +625,7 @@ body {
 
 .program {
   padding: 80px 0;
-  background: #6a0200;
+  /* background: #6a0200; */
 }
 
 .program .container {
@@ -787,7 +804,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../img/program/last-block-1x-mobile.jpg);
+  background-image: url(../img/program/last-block-1x-mobile.png);
 
   width: 320px;
   height: 460px;
@@ -799,7 +816,7 @@ body {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .last-block {
-    background-image: url(../img/program/last-block-2x-mobile.jpg);
+    background-image: url(../img/program/last-block-2x-mobile.png);
   }
 }
 
@@ -820,7 +837,7 @@ body {
 @media screen and (min-width: 1280px) {
   .program {
     padding: 120px 0;
-    background: #6a0200;
+    /* background: #6a0200; */
   }
 
   .program .start-info {
@@ -1016,6 +1033,7 @@ body {
   }
 
   .last-block .last-block-box {
+    height: 546px;
     justify-content: center;
     gap: 28px;
   }
@@ -1065,9 +1083,20 @@ body {
 
 /* tariffs */
 
+.bg-wrapper {
+  background: #6a0200;
+  transition: background-color 1s ease;
+}
+
+.bg-wrapper.visible {
+  background: #2c0100;
+}
+
 .tariffs {
   padding: 80px 0;
-  background: #2c0100;
+}
+
+.tariffs {
 }
 
 .tariffs .container {
@@ -1251,7 +1280,6 @@ body {
 @media screen and (min-width: 1280px) {
   .tariffs {
     padding: 80px 0;
-    background: #2c0100;
   }
 
   .tariffs .title {
@@ -1364,7 +1392,7 @@ body {
 
 .footer {
   padding: 140px 0 120px;
-  background: #2c0100;
+  /* background: #2c0100; */
 }
 
 .footer .container {
@@ -1454,7 +1482,7 @@ body {
 @media screen and (min-width: 1280px) {
   .footer {
     padding: 120px 0 60px;
-    background: #2c0100;
+    /* background: #2c0100; */
   }
 
   .footer .footer-wrapper {
