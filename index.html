@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
@@ -40,6 +41,7 @@
           <p class="decor-text">Потік світла</p>
           <p class="decor-text">Потік світла</p>
         </div>
+
         <div class="decoration-text right">
           <p class="decor-text">Потік світла</p>
           <p class="decor-text">Потік світла</p>
@@ -61,7 +63,16 @@
       <section class="for-whom" id="for-whom">
         <div class="container">
           <div class="main-info-container">
-            <h2 class="title">Для кого цей курс?</h2>
+            <h2
+              class="title"
+              data-aos="fade-zoom-in"
+              data-aos-easing="linear"
+              data-aos-delay="300"
+              data-aos-offset="0"
+              duration="400"
+            >
+              Для кого цей курс?
+            </h2>
             <p class="desc">
               Цей курс підійде для всіх, хто працює чи хоче працювати зі
               світлом, незалежно від рівня досвіду
@@ -210,7 +221,16 @@
         <section class="program" id="program">
           <div class="container">
             <p class="start-info">старт 14 квітня</p>
-            <h2 class="title">Програма</h2>
+            <h2
+              class="title"
+              data-aos="fade-zoom-in"
+              data-aos-easing="linear"
+              data-aos-delay="300"
+              data-aos-offset="0"
+              duration="400"
+            >
+              Програма
+            </h2>
             <ul class="program-list">
               <li class="list-item">
                 <div class="main-item-box">
@@ -233,8 +253,7 @@
                       Налаштування телефону для якісних відео
                     </li>
                     <li class="lesson-item">
-                      Камера в твоїх руках. Налаштування на прикладі SONY. Чітка
-                      та якісна картинка
+                      Камера в твоїх руках. Чітка та якісна картинка
                     </li>
                     <li class="lesson-item">
                       Джерела світла: мечі, панелі, ліхтарі, студійне світло
@@ -321,7 +340,16 @@
         </section>
         <section class="tariffs changeBg" id="tariffs">
           <div class="container">
-            <h2 class="title">Тарифи</h2>
+            <h2
+              class="title"
+              data-aos="fade-zoom-in"
+              data-aos-easing="linear"
+              data-aos-delay="300"
+              data-aos-offset="0"
+              duration="400"
+            >
+              Тарифи
+            </h2>
             <ul class="list">
               <li class="list-item">
                 <div class="item-image"></div>
@@ -351,7 +379,9 @@
                   </ul>
                   <p class="price">3 990 грн</p>
                 </div>
-                <button class="buy" type="button">записатися</button>
+                <button class="buy" type="button" data-modal-open="modal1">
+                  записатися
+                </button>
               </li>
               <li class="list-item">
                 <div class="item-image"></div>
@@ -385,7 +415,9 @@
                   </ul>
                   <p class="price">5 990 грн</p>
                 </div>
-                <button class="buy" type="button">записатися</button>
+                <button class="buy" type="button" data-modal-open="modal2">
+                  записатися
+                </button>
               </li>
             </ul>
           </div>
@@ -425,8 +457,54 @@
           </div>
         </section>
       </div>
+      <div class="backdrop is-hidden" data-modal="modal1">
+        <div class="modal">
+          <button type="button" class="close-button" data-modal-close>
+            <img
+              src="./src/img/close-modal-icon.svg"
+              width="30"
+              height="30"
+              alt="close"
+            />
+          </button>
+          <div class="modal-box">
+            <div>
+              <div id="kwiga-widget-1743494849000"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="backdrop is-hidden" data-modal="modal2">
+        <div class="modal">
+          <button type="button" class="close-button" data-modal-close>
+            <img
+              src="./src/img/close-modal-icon.svg"
+              width="30"
+              height="30"
+              alt="close"
+            />
+          </button>
+          <div class="modal-box">
+            <div>
+              <div id="kwiga-widget-1743494834000"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-
     <script src="./src/js/changeBg.js" type="module"></script>
+    <script src="./src/js/modal.js" type="module"></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1743494834000&uuid=1d4dcf66-b471-495c-b8e5-69b2cab9448a&producer=https://kwiga.com/"
+    ></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1743494849000&uuid=8e7aeca7-7d95-4a9d-a227-8396a211d0f5&producer=https://kwiga.com/"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
