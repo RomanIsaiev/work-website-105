@@ -1573,7 +1573,7 @@ body.modal-open {
 }
 
 .modal-box {
-  height: 620px;
+  height: auto;
   overflow: auto;
 }
 
