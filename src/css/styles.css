@@ -1529,6 +1529,7 @@ body.modal-open {
 }
 
 .backdrop {
+  display: block;
   position: fixed;
   left: 0;
   top: 0;
@@ -1549,6 +1550,7 @@ body.modal-open {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  display: none;
 }
 
 .modal {
