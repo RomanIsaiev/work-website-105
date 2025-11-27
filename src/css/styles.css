@@ -1243,6 +1243,12 @@ body {
   text-transform: uppercase;
 }
 
+.tariffs .price span {
+  text-decoration: line-through;
+  color: #ffeb5f;
+  opacity: 0.4;
+}
+
 .tariffs .buy {
   display: block;
   color: #ffeb5f;
